@@ -49,7 +49,7 @@ main {
   color: var(--dark-blue);
 }
 
-.card-container > button {
+.card-container button {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
   font-size: calc(14rem / 16);
@@ -59,11 +59,15 @@ main {
   border: 0;
 }
 
+a.pay-link {
+  display: flex;
+  flex-direction: column;
+}
+
 button.pay {
   color: var(--pale-blue);
   background: var(--bright-blue);
   height: 3rem;
-  margin-top: 0.5rem;
   transition: all 0.5s ease;
   filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 30%));
 }
@@ -103,7 +107,6 @@ button.cancel:hover {
   display: flex;
   margin: 1rem auto !important;
   border-radius: 10px;
-  /* height: 5rem !important; */
   font-size: calc(14rem / 16);
 }
 
@@ -137,14 +140,19 @@ button.cancel:hover {
   font-size: calc(13rem / 16);
 }
 
-.change-button a {
+.change-button button {
+  font-family: "Red Hat Display", sans-serif;
+  text-decoration: underline;
   width: 100%;
   margin: auto 0;
   color: var(--bright-blue);
   transition: all 0.2s ease;
+  background-color: var(--pale-blue);
+  border: 0;
 }
 
-.change-button a:hover {
+.change-button button:hover {
+  cursor: pointer;
   text-decoration: none;
   color: hsl(245, 40%, 52%);
 }
@@ -155,7 +163,7 @@ button.cancel:hover {
 }
 
 .buy-card-left,
-.change-button a {
+.change-button > a {
   margin: 0.8rem 0;
 }
 
