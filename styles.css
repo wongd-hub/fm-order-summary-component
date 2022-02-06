@@ -25,7 +25,7 @@ main {
 }
 
 .card-container {
-  width: calc(360rem / 16);
+  width: calc(400rem / 16);
   height: fit-content;
   background: var(--very-pale-blue);
   border-radius: 20px;
