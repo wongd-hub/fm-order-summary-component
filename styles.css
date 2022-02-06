@@ -59,7 +59,7 @@ main {
   border: 0;
 }
 
-a.pay-link {
+form.pay-link {
   display: flex;
   flex-direction: column;
 }
