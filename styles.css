@@ -119,12 +119,14 @@ button.cancel:hover {
 
 .buy-card-text {
   margin: auto 0;
+  width: fit-content;
 }
 
 .buy-card-text-comp:nth-child(1) {
   font-weight: 700;
   padding-bottom: 0.3rem;
   color: var(--dark-blue);
+  width: fit-content;
 }
 
 .change-button {
