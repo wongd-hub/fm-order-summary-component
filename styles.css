@@ -119,7 +119,8 @@ button.cancel:hover {
 
 .buy-card-text {
   margin: auto 0;
-  width: fit-content;
+  width: fit-content;  
+  text-align: start;
 }
 
 .buy-card-text-comp:nth-child(1) {
