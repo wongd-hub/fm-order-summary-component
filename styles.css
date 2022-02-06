@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html,
+body {
+  overflow: hidden;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.card-container {
+  width: calc(360rem / 16);
+  height: fit-content;
+  background: var(--very-pale-blue);
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-container > h1,
+.card-container > div,
+.card-container > button {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.card-container > h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-blue);
+}
+
+.card-container > button {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: calc(14rem / 16);
+  margin: 1rem auto;
+  border-radius: 10px;
+  width: 80%;
+  border: 0;
+}
+
+button.pay {
+  color: var(--pale-blue);
+  background: var(--bright-blue);
+  height: 3rem;
+  margin-top: 0.5rem;
+  transition: all 0.5s ease;
+  filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 30%));
+}
+
+button.pay:hover {
+  background-color: hsl(245, 40%, 52%);
+  cursor: pointer;
+}
+
+button.cancel {
+  background: none;
+  color: var(--desaturated-blue);
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+button.cancel:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: calc(24rem / 16);
+}
+
+.card-descr {
+  color: var(--desaturated-blue);
+  font-size: calc(14rem / 16);
+}
+
+.buy-card {
+  background-color: var(--pale-blue);
+  justify-content: space-between;
+  width: 80%;
+  display: flex;
+  margin: 1rem auto !important;
+  border-radius: 10px;
+  height: 5rem;
+  font-size: calc(14rem / 16);
+}
+
+.buy-card-left {
+  display: flex;
+}
+
+.buy-card img {
+  height: 70%;
+  width: auto;
+  margin: auto 1rem;
+}
+
+.buy-card-text {
+  margin: auto 0;
+}
+
+.buy-card-text-comp:nth-child(1) {
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+  color: var(--dark-blue);
+}
+
+.change-button {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(13rem / 16);
+}
+
+.change-button a {
+  width: 100%;
+  margin: auto 0;
+  color: var(--bright-blue);
+  transition: all 0.2s ease;
+}
+
+.change-button a:hover {
+  text-decoration: none;
+  color: hsl(245, 40%, 52%);
+}
+
+@media only screen and (max-width: 375px) {
+  .card-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .buy-card {
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+
+  .buy-card-left,
+  .change-button a {
+    margin: 1rem 0;
+  }
+}
