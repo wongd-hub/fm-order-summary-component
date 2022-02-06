@@ -122,11 +122,11 @@ button.cancel:hover {
   width: fit-content;
 }
 
-.buy-card-text-comp:nth-child(1) {
+.buy-card-text-comp {
   font-weight: 700;
   padding-bottom: 0.3rem;
   color: var(--dark-blue);
-  width: fit-content;
+  min-width: 5rem;
 }
 
 .change-button {
